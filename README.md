@@ -74,7 +74,13 @@ Luego hay que insertar en el navegador lo siguiente para poder ver la interface 
 ```sh
 http://localhost:8000/admin
 ```
-Despues te tienes que loguear con tu super usuario que acabas de crear. Cuando estes dentro, ya puedes crear un contrato para algun empleado existente en el sistema, y esto hace que el empleado este contratado!.
+Despues te tienes que loguear con tu super usuario que acabas de crear. 
+```sh
+//Este es un superusuario ya creado, por si quieres utilizar este
+admin@example.com
+1234
+```
+Cuando estes dentro, ya puedes crear un contrato para algun empleado existente en el sistema, y esto hace que el empleado este contratado!.
 
 #### Autentincacion y logueo
 La segunda es a traves de crear un usuario en el sistema a travez de el siguiente endpoint/url:
