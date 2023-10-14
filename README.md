@@ -32,7 +32,7 @@ Esto se puede evidenciar en el api que se realizo para el punto 3, entonces si s
 
 ## _Punto 3_
 
-Para poder correr este proyecto se necesita activar el entorno virtual, el cual es _venv_. Luego se realiza el siguiente comando:
+Para poder correr este proyecto se necesita activar el entorno virtual,e instalar django y djangorestframework, el cual es _venv_. Luego se realiza el siguiente comando:
 ```sh
 python manage.py runserver
 ```
