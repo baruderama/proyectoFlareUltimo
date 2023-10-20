@@ -1,16 +1,6 @@
 from rest_framework import serializers
-from .models import Contract,Employee
+# from .models import Contract,Employee
 from django.contrib.auth import get_user_model,authenticate
-
-class EmployeeSerializer(serializers.ModelSerializer):
-    class Meta:
-        model=Employee
-        fields =('id','name','last_name')
-
-class ContractSerializer(serializers.ModelSerializer):
-    class Meta:
-        model=Contract
-        fields =('id','start_date','employee','end_date')
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:

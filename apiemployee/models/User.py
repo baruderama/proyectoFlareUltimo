@@ -2,11 +2,6 @@ from django.db import models
 from django.utils import timezone
 from django.contrib.auth.models import AbstractBaseUser,PermissionsMixin,BaseUserManager
 
-# Create your models here.
-
-# class CustomUser(AbstractUser):
-#     email = models.EmailField(unique=True)
-
 class UserManager(BaseUserManager):
     def create_user(self,email,password,**extra_fields):
         if not email:
@@ -33,15 +28,4 @@ class User(AbstractBaseUser,PermissionsMixin):
     objects=UserManager()
     
     USERNAME_FIELD='email'
-    
-
-class Employee(models.Model):
-    name=models.CharField(max_length=100)
-    last_name=models.CharField(max_length=100,null=True)
-    
-    
-class Contract(models.Model):
-    start_date=models.DateTimeField(default=timezone.now)
-    end_date =models.DateTimeField(null=True)
-    employee = models.ForeignKey(Employee, on_delete=models.CASCADE)
     
