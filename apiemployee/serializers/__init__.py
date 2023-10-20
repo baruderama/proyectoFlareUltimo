@@ -1,3 +1,3 @@
-from .Contract import *
-from .Employee import *
-from .User import *
+from .contract import *
+from .employee import *
+from .user import *

@@ -1,3 +1,3 @@
-from .Employee import Employee
-from .Contract import Contract
-from .User import *
+from .employee import Employee
+from .contract import Contract
+from .user import *
