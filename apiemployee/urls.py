@@ -1,5 +1,5 @@
 from rest_framework import routers
-from .api import EmployeeViewSet,ContractViewSet,EmployeeContractsViewSet,CreateTokenView,CreateUserView
+from apiemployee.views import EmployeeViewSet,ContractViewSet,EmployeeContractsViewSet,CreateTokenView,CreateUserView
 from django.urls import path, include
 router= routers.DefaultRouter()
 
